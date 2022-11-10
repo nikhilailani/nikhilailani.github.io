@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Luxurious+Roman&family=Moon+Dance&display=swap');
+
+.navigation-wrapper{
+    position: fixed;
+    background-color:#176d6d;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    z-index: 1000;
+    height: 8vh;
+    
+}
+.navigation-link{
+    position: relative;
+    height: 100%;
+    width: 70%;
+    
+}
+ul{
+    margin: 0;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+li{
+    text-transform: uppercase;
+    list-style: none;
+    font-size: 1.15em;
+    font-family: 'Moon Dance', cursive; 
+    font-family: 'Luxurious Roman', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.navigation-link a{
+    color: #E5DFDF;
+    text-decoration: none;
+    
+}
+.navigation-link a:hover{
+    border-bottom: 2px solid #E5DFDF;
+}
+
+a .actice-classname{
+    color: black;
+}
+
+.nav-button{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    left: 10px;
+    display: none;
+}
+.line{
+    width: 30px;
+    height: 5px;
+    border-top: 4px solid #E5DFDF ;
+}
+
+
+
+
+@media (max-width:1000px) {
+    .navigation-link li{
+        font-size: 1em;
+    }
+    .navigation-link{
+        width: 80%;
+    }
+}
+
+@media (max-width:700px) {
+    .navigation-link{
+        display: none;
+    }
+    .nav-button{
+        display: flex;
+    }
+
+    #hidden{
+        display: flex;
+        position: absolute;
+        left: 0px;
+        /* top: 8vh; */
+        height: 70vh;
+        width: 50%;
+        background-color: #176d6d;
+       
+    }
+
+    ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 1em;
+    }
+
+}
+
+
+@media (max-width:500px) {
+    .navigation-link{
+        width: 100%;
+    }
+    #hidden{
+        width: 100%;
+        height: 80vh;
+    }
+}

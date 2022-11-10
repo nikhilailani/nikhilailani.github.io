@@ -1,0 +1,26 @@
+/* #1a4645  003366 CCCCCC E5DFDF */
+
+.footer-wrapper{
+    width: 100%;
+    height: 5vh;
+}
+
+.footer-container{
+    width: 100%;
+    height: 5vh;
+    background-color:#072727;
+    
+}
+
+.footer-content{
+    width: fit-content;
+    margin: auto;
+    position: relative;
+    top: 10%;
+}
+
+.footer-container p{
+    margin: 0;
+    font-size: 1.25em;
+    color: #E5DFDF;
+}

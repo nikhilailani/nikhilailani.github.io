@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Moon+Dance&display=swap');
+.contact-wrapper{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    background-color:#E5DFDF;
+    position: relative;
+    display: flex;
+}
+.contact-border-line{
+    width: 20px;
+    height: 100vh;
+    background-color: #1a4645;
+}
+
+.contact-sections{
+    position: relative;
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    margin: auto;
+    overflow: hidden;
+    justify-content: space-evenly;
+}
+
+/* LEFT PART */
+.contact-left-form-section{
+    width: 65%;
+    height: 100%;
+   
+}
+
+.left-section-desc{
+    width: 75%;
+    height: 10vh;
+    margin: auto;
+    position: relative;
+    top: 10%;
+}
+.left-section-desc p{
+    margin: 0;
+    font-size: 1.1em;
+}
+.left-form{
+    width: 75%;
+    height: 60vh;
+    position: relative;
+    top: 20%;
+    margin: auto;
+    line-height: 5em;
+}
+.user-basic-info{
+    display: flex;
+    justify-content: space-between;
+}
+.form-subject{
+    position: relative;
+    top: 5%;
+}
+.form-name ,.form-email{
+    width: 48%;
+    height: 6vh;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+}
+.form-subject-input{
+    height: 6vh;
+    width: 99%;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+}
+.form-text-input{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+}
+textarea{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    
+}
+.btn-msg{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    max-height: 5vh;
+}
+
+.form-submit{
+    outline: none;
+    border: none;
+    color: #E5DFDF;
+    padding: 13px 20px;
+    background-color: #1a4645;
+    position: relative;
+    top:0;
+    cursor: pointer;
+    width: 20%;
+    height: 100%;
+}
+.msg-display{
+    width: 80%;
+    height: 100%;
+    text-align:center;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.form-submit:hover{
+    background-color: #E5DFDF;
+    color: #1a4645;
+    border: 2px solid #1a4645;
+}
+
+
+/* RIGHT PART */
+.contact-right-form-section{
+    width: 34%;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-evenly;
+}
+
+.contact-me-heading{
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    
+}
+.contact-me-heading h1{
+    font-family: 'Moon Dance', cursive;
+    font-size: 4em;
+    color: black;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.contact-right-part{
+    position: relative;
+    height: 50vh;
+    background-color: #1a46453d;
+    position: relative;
+    width: 100%;
+    /* background-color: #E5DFDF; */
+}
+
+.right-section-heading{
+    width: fit-content;
+    margin: auto;
+    position: relative;
+    
+}
+.right-section-heading h1{
+    margin: 0;
+    font-size: 1.75em;
+}
+
+.right-section-links{
+    position: relative;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* background-color: aliceblue; */
+}
+.right-section-links p{
+    margin: 0;
+    color: black;
+}
+
+.right-section-links a{
+    text-decoration: none;
+    color: black;
+}
+
+.github-link, .linkedin-link, .email-link{
+    width: 15%;
+    height: fit-content;
+    overflow: hidden;
+    text-align: center;    
+}
+
+
+.github-image, .linkedin-image, .email-image{
+    width: 80%;
+    margin:  auto;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+
+
+/* not showing the heading and media links in the desktop version 
+and it will be displayed in the mobile version or 700px */
+.connect-mobile-version{
+    display: none;
+}
+
+/* @media screen and (max-width:1000px){
+    .msg-display{
+        font-size: .9em;
+    }
+    .left-section-desc{
+        top: 10%;
+        font-size: 1.5em;
+        width: 100%;
+    }
+
+    .left-form{
+        top: 20%;       
+    }
+    input,textarea{
+        margin-top: 15px;
+    }
+    .contact-right-part{
+    height: 40vh;
+    }
+    .github-link, .linkedin-link, .email-link{
+        height: 60px;
+        width: 60px;
+    }
+
+} */
+@media screen and (max-width:800px){
+    .msg-display{
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width:1000px){
+
+    .left-form{
+        height: 60vh;
+    }
+    .contact-sections{
+        height: 95vh;
+    }
+ 
+    .contact-right-form-section{
+        display: none;
+    }
+    .contact-left-form-section{
+        width: 95%;
+        margin: auto;
+    }
+    .connect-mobile-version{
+        display: block;
+    }
+    .contact-me-heading-mob{
+        position: relative;
+        width: fit-content;
+        margin: 0 auto;
+        top: 5%;
+    }
+    .left-section-desc{
+        top: 8%;
+    }
+    .left-form{
+        top: 10%;
+    }
+
+    .contact-me-heading-mob h1{
+        font-family: 'Moon Dance', cursive;
+        font-size: 3em;
+        color: black;
+        text-transform: capitalize;
+        margin: 0;
+    }
+
+    .user-basic-info{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .form-name ,.form-email{
+        width: 100%;
+    }
+    .contact-right-part-mob{
+        height: 10vh;
+        top: 8%;
+        width: 85%;
+        margin: auto;
+        position: relative;
+    }
+
+    .right-section-links-mob{
+        display:flex;
+        flex-direction: row;
+        height: 6vh;
+    
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+
+    .github-link, .linkedin-link, .email-link{
+        width: 50px;
+        height: 50px;
+    }
+
+    .msg-display{
+        line-height: 2;
+    }
+    .form-submit{
+        padding: 15px 10px;
+    }
+}

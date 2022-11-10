@@ -1,0 +1,135 @@
+/* #1a4645 #183f3f    003366 CCCCCC E5DFDF */
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Moon+Dance&display=swap');
+.resume-wrapper{
+    height: 100vh;
+    width: 100%;
+    background-color: #183f3f;
+}
+
+.resume-heading{
+    position: relative;
+    color: #e5dfdf;
+    top: 8%;
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+    line-height: 2.5em;
+}
+.resume-heading h1{
+    margin: 0;
+    font-size: 4em;
+    font-family: 'Moon Dance', cursive;
+}
+.resume-heading p{
+    margin: 0;
+}
+
+.resume-content{
+    position: relative;
+    top: 13%;
+    height: 85vh;
+    /* change the height */
+    width: 80%;
+    margin: auto;
+}
+
+.resume-exp-edu-section{
+    display: flex;
+    width: fit-content;
+    justify-content: space-evenly;
+    margin: auto;
+}
+.resume-exp, .resume-edu{
+    width: 43%;
+    height: 70vh;  
+    /* change the height */
+    background-color: rgba(221, 211, 211, 0.329);
+}
+
+.exp-heading{
+    position: relative;
+    width: fit-content;
+    left: 3%;
+    color: #e5dfdf;
+    border-bottom: 2px solid gray;
+}
+.exp-content{
+    position: relative;
+    width: 80%;
+    height: fit-content;
+    top: 5%;
+}
+
+.exp-heading h1{
+    margin: 0;
+    font-size: 1.5em;
+}
+.exp-place-heading{
+    position: relative;
+    width: 100%;
+    border-bottom: 2px solid gray;
+    left: 5%;
+    color: #e5dfdf;
+}
+.exp-place-heading h1{
+    margin: 0;
+    font-size: 1.25em;
+}
+.exp-place-content{
+    position: relative;
+    left: 5%;   
+}
+.exp-place-content p{
+    margin: 8px 10px;
+    color: #e5dfdf;
+    color: black;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 0.90em
+}
+
+
+
+/* styling the right section  */
+
+@media screen and (max-width:700px){
+    
+    .resume-heading{
+        line-height: 2em;
+    }
+    .resume-heading h1{
+        font-size: 3em;
+    }
+
+    .resume-exp-edu-section{
+        flex-direction: column;
+        gap: 10px;
+        top: 5%;
+        justify-content: space-between;
+    }
+
+    .resume-exp, .resume-edu{
+        width: 100%;
+        height: fit-content
+    }
+
+    .exp-heading h1{
+        font-size: 1.1em;
+    }
+    .exp-place-heading h1{
+        font-size: 1em;
+    }
+    .exp-content{
+        width: 90%;
+    }
+    .exp-place-content p{
+        margin: 7px 10px;
+        
+    }
+}
+
+@media screen and (max-width:400px) and (max-height:800px) {
+    .exp-place-content p{
+        font-size: .80em;
+    }
+}

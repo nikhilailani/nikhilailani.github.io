@@ -1,0 +1,340 @@
+/* #1a4645 #183f3f    003366 CCCCCC E5DFDF */
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Moon+Dance&display=swap');
+
+.services-wrapper{
+    height: 100vh;
+    width: 100%;
+    background-color: #E5DFDF;
+    margin: 0;
+}
+
+.services-container{
+    position: relative;
+    top:5%;
+    margin: auto;
+    height: 50vh;
+    align-items: center;
+    width: 90%;
+    background-color: #1a4645; 
+         
+}
+.services-heading{
+    width: fit-content;
+    margin: auto;
+    position: relative;
+    top: 5%;
+    color: #E5DFDF;
+    
+}
+.services-heading h1{
+    margin: 0;
+    font-size: 4em;
+    text-transform: capitalize;
+    font-family: 'Moon Dance', cursive;
+}
+
+.services-content{
+    position: relative;
+    margin: auto;
+    width: fit-content;
+    top: 7%;
+    color: #E5DFDF;
+    border-bottom: 1px solid grey;
+}
+.services-content p{
+    margin: 0;
+    text-align: center;
+}
+
+.services-items{
+    position: relative;
+    height: 60vh;
+    width: 100%;    
+    display: flex;
+    gap: 20px;
+    justify-content:center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+}
+.service-webdev, .service-webdesign, .service-appdesign, .service-videodesign{
+    position: relative;
+    height: 35vh;
+    width: 20%;
+    margin: 0;
+    background-color: #E5DFDF;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px gray;
+   
+}
+.service-webdev{
+    color: #E5DFDF;
+    background-color:  #3b7978;
+}
+.service-webdesign, .service-appdesign, .service-videodesign{
+    color: black;
+}
+
+
+.service-image{
+    position: relative;
+    top: 5%;
+    left: 2%;
+    height: 12vh;
+    width: 40%;
+    /* border-radius: 50%; */
+    /* box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(172, 172, 172, 0.7);
+    overflow: hidden; */
+            }
+
+.service-img-style{
+    margin: auto;
+    height: 15vh;
+    width: 70%;
+    overflow: hidden;
+}
+img{
+    width: 100%;
+}
+
+
+.service-heading{
+    width: fit-content;
+    position: relative;
+    top: 10%;
+    text-transform: uppercase;
+    margin: auto;
+}
+.service-heading h1{
+    margin: 0;
+    font-size: 1.5em;
+}
+.service-information{
+    position: relative;
+    top: 15%;
+    left: 5%;
+    width: 90%;
+    text-transform: capitalize;
+    
+}
+
+.service-information p{
+    margin: 0;   
+}
+
+/* styling the down box of services */
+.service-down-container{
+    width: 90%;
+    height: 20vh;
+    position: relative;
+    /* background-color:#3b7978;
+    background-color: #52dad85b; */
+    background-color:  #3b7978;
+    margin: auto;
+    top: 20%;
+}
+.service-down-items{
+    width: 60%;
+    height: fit-content;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.service-box{
+    margin: 0;
+    width: 25%;
+    height: 20vh;
+    text-align: center;
+    position: relative;
+    top: 0%;
+    align-self: center;
+    justify-content: center;
+}
+
+.service-box .service-upper-row{
+    position: relative;
+    top: 20%;
+    margin: 0;
+}
+.service-box p{
+    font-size: 3em;
+    margin: 0;
+    color: #E5DFDF;
+    
+    font-weight: bold;
+}
+.service-box .service-lower-row{
+    position: relative;
+    top: 15%;
+    margin: 0;
+}
+.service-box h1{
+    position: relative;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+
+
+@media screen and (max-width:1500px) {
+    .service-box{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width:1080px) {
+    .service-box p{
+        font-size: 2.5em;
+    }
+
+    .services-content p{
+        font-size: 1.2em;
+    }
+    .service-img-style{
+        height: 10vh;
+    }
+    .service-heading{
+        top: 0%;
+    }
+    .service-heading h1{
+        font-size: 1.2em;
+    }
+    .service-information{
+        top: 5%
+    }
+}
+
+
+@media screen and (max-width:900px) {
+    
+    .service-down-items{
+        width: 75%;
+    }
+    .service-box{
+        width: 100%;
+        /* background-color:violet; */
+    }
+    .service-box p{
+        font-size: 2em;
+    }
+}
+
+
+@media screen and (max-width:800px) {
+    .services-heading h1{
+        font-size: 3em;
+    }
+    .services-content{
+        font-size: .75em;
+    }
+    .services-items{
+        gap: 5;
+        top: 10%;
+    }
+    
+    .services-items{
+        height: 50vh;
+
+    }
+
+    .service-webdev, .service-webdesign, .service-appdesign, .service-videodesign{
+        height: 25vh;
+        overflow: hidden;
+        width: 33%;
+    }
+    .service-img-style{
+   
+        height: fit-content;
+    }
+    .service-information{
+        top: 0;
+    }
+    .service-down-container{
+        top: 25%
+    }
+}
+
+@media screen and (max-width:550px) {
+    .services-container{
+        height: 60vh;
+    }
+
+    .services-heading h1{
+        font-size: 2.3em;
+    }
+    .services-content p{
+        /* font-size: .80em; */
+    }
+    .services-items{
+        top: 15%;
+    }
+    .service-webdev, .service-webdesign, .service-appdesign, .service-videodesign{
+        width: 40%;
+        height: 25vh;
+    }
+    .service-image{
+        height: 6vh;
+    }
+    .service-heading{
+        top: 2%;
+        width: 95%;
+        margin: auto;
+    }
+    .service-heading h1{
+        font-size: 1em;
+        text-align: center;
+    }
+    .service-information{
+        top:2%
+    }
+    .service-information p{
+        font-size: .89em;
+        text-align: center;
+    }
+
+    .service-down-container{
+        top: 20%;
+        height: 17vh;
+    }
+    .service-down-items{
+        width: 100%;
+    }
+    .service-box{
+        width: 100%;
+        height: 15vh;
+        
+    }
+    .service-box p{
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .service-box h1{
+        font-size: 1.25em;
+        text-align: center;
+    
+    }
+
+
+}
+
+@media screen and (max-width:550px) and (max-height:730px) {
+    .service-heading{
+        top: 10%;
+        width: 95%;
+        margin: auto;
+    }
+    .service-heading h1{
+        font-size: 1em;
+        text-align: center;
+    }
+    .service-information{
+        top:10%
+    }
+    .service-information p{
+        font-size: .89em;
+        text-align: center;
+    }
+
+}
